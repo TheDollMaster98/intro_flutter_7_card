@@ -12,7 +12,7 @@ class HomePageState extends State<HomePage> {
 
   void incrementCounter() {
     setState(() {
-      counter++;
+      counter == 10 ? counter = 0 : counter++;
     });
   }
 
